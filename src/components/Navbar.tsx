@@ -49,11 +49,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 ">
           <Link to="/" className="flex items-center space-x-2 group mt-10">
-            <div className="w-20 h-20 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300 relative">
+            <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300 relative">
               <img
                 src={logo}
                 alt="Logo"
-                className="w-16 h-16 rounded-full object-cover"
+                className="w-12 h-12 rounded-full object-cover"
               />
             </div>
           </Link>

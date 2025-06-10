@@ -6,6 +6,8 @@ interface Product {
   price: number;
   image: string;
   category: string;
+  size: string;
+  color: string;
 }
 
 interface ProductCardProps {
@@ -75,6 +77,19 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <h3 className="text-lg font-semibold text-black group-hover:text-yellow-600 transition-colors duration-300">
             {product.name}
           </h3>
+          
+          {/* Size and Color Details */}
+          <div className="flex justify-center gap-4 text-sm text-gray-600">
+            <div className="flex items-center">
+              <span className="mr-1">Size:</span>
+              <span className="font-medium">{product.size}</span>
+            </div>
+            <div className="flex items-center">
+              <span className="mr-1">Color:</span>
+              <span className="font-medium">{product.color}</span>
+            </div>
+          </div>
+          
           <p className="text-2xl font-bold text-yellow-600">
             ₹{product.price.toLocaleString()}
           </p>

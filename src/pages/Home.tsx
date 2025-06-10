@@ -29,28 +29,75 @@ const Home = () => {
       name: "Golden Pearl Beads",
       price: 2500,
       image: "https://ik.imagekit.io/os1mzoooe/8.png?updatedAt=1749527931588",
-      category: "Pearl Beads"
+      category: "Pearl Beads",
+      size: "3mm",
+      color: "Gold"
     },
     {
       id: 2,
       name: "Crystal Stone Beads",
       price: 1800,
       image: "https://ik.imagekit.io/os1mzoooe/9.png?updatedAt=1749527931942",
-      category: "Crystal Beads"
+      category: "Crystal Beads",
+      size: "4mm",
+      color: "Clear"
     },
     {
       id: 3,
       name: "Silk Thread Beads",
       price: 1200,
       image: "https://ik.imagekit.io/os1mzoooe/10.png?updatedAt=1749527932040",
-      category: "Thread Beads"
+      category: "Thread Beads",
+      size: "2mm",
+      color: "Multicolor"
     },
     {
       id: 4,
       name: "Metallic Sequin Beads",
       price: 3200,
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1749526685611",
-      category: "Sequin Beads"
+      category: "Sequin Beads",
+      size: "5mm",
+      color: "Silver"
+    }
+  ];
+
+  const monthProducts = [
+    {
+      id: 1,
+      name: "Golden Pearl Beads",
+      price: 2500,
+      image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1749526685712",
+      category: "Pearl Beads",
+      size: "3mm",
+      color: "Gold"
+    },
+    {
+      id: 2,
+      name: "Crystal Stone Beads",
+      price: 1800,
+      image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1749526685693",
+      category: "Crystal Beads",
+      size: "4mm",
+      color: "Clear"
+    },
+    {
+      id: 3,
+      name: "Silk Thread Beads",
+      price: 1200,
+      image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1749526685661",
+      category: "Thread Beads",
+      size: "2mm",
+      color: "Multicolor"
+    },
+    {
+      id: 4,
+      name: "Metallic Sequin Beads",
+      price: 3200,
+      image: "https://ik.imagekit.io/os1mzoooe/6.png?updatedAt=1749526685650",
+      category: "Sequin Beads",
+      size: "5mm",
+      color: "Silver"
     }
   ];
 
@@ -166,7 +213,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-32">
             {featuredProducts.map((product, index) => (
               <div
                 key={product.id}
@@ -178,7 +225,28 @@ const Home = () => {
             ))}
           </div>
         </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl font-bold text-black mb-4">Best Sellers this Month</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              The most popular bead collections this month, loved by our customers
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-32">
+            {monthProducts.map((product, index) => (
+              <div
+                key={product.id}
+                className="animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <ProductCard product={product} />
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
+      
 
       {/* About Sections */}
       <section className="py-20 bg-white relative">
@@ -260,7 +328,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-32">
-            {[...featuredProducts, ...featuredProducts.slice(0, 2)].map((product, index) => (
+            {[...featuredProducts, ...monthProducts.slice(0, 2)].map((product, index) => (
               <div
                 key={`${product.id}-${index}`}
                 className="animate-fade-in-up"

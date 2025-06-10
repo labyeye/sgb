@@ -14,63 +14,81 @@ const Products = () => {
       name: "Golden Pearl Beads",
       price: 2500,
       image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1749526685712",
-      category: "Pearl Beads"
+      category: "Pearl Beads",
+      size: "3mm",
+      color: "Gold"
     },
     {
       id: 2,
       name: "Crystal Stone Beads",
       price: 1800,
       image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1749526685693",
-      category: "Crystal Beads"
+      category: "Crystal Beads",
+      size: "4mm",
+      color: "Clear"
     },
     {
       id: 3,
       name: "Silk Thread Beads",
       price: 1200,
       image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1749526685661",
-      category: "Thread Beads"
+      category: "Thread Beads",
+      size: "2mm",
+      color: "Multicolor"
     },
     {
       id: 4,
       name: "Metallic Sequin Beads",
       price: 3200,
       image: "https://ik.imagekit.io/os1mzoooe/6.png?updatedAt=1749526685650",
-      category: "Sequin Beads"
+      category: "Sequin Beads",
+      size: "5mm",
+      color: "Silver"
     },
     {
       id: 5,
       name: "Traditional Kundan Beads",
       price: 4500,
       image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1749526685663",
-      category: "Kundan Beads"
+      category: "Kundan Beads",
+      size: "6mm",
+      color: "Red"
     },
     {
       id: 6,
       name: "Mirror Work Beads",
       price: 2800,
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1749526685611",
-      category: "Mirror Beads"
+      category: "Mirror Beads",
+      size: "8mm",
+      color: "Mirror"
     },
     {
       id: 7,
       name: "Zardozi Beads",
       price: 3800,
       image: "https://ik.imagekit.io/os1mzoooe/10.png?updatedAt=1749527932040",
-      category: "Zardozi Beads"
+      category: "Zardozi Beads",
+      size: "4mm",
+      color: "Gold"
     },
     {
       id: 8,
       name: "Antique Gold Beads",
       price: 5200,
       image: "https://ik.imagekit.io/os1mzoooe/9.png?updatedAt=1749527931942",
-      category: "Gold Beads"
+      category: "Gold Beads",
+      size: "5mm",
+      color: "Antique Gold"
     },
     {
       id: 9,
       name: "Rajasthani Mirror Beads",
       price: 2200,
       image: "https://ik.imagekit.io/os1mzoooe/8.png?updatedAt=1749527931588",
-      category: "Mirror Beads"
+      category: "Mirror Beads",
+      size: "7mm",
+      color: "Multicolor"
     }
   ];
 

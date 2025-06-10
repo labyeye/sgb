@@ -94,7 +94,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             ₹{product.price.toLocaleString()}
           </p>
           <button className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-medium py-3 px-6 rounded-2xl hover:from-yellow-500 hover:to-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm">
-            Add to Cart
+            Buy Now
           </button>
         </div>
       </div>

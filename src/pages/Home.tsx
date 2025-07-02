@@ -444,32 +444,7 @@ const Home = () => {
           </svg>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl font-bold text-black mb-4">
-              Explore More Collections
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Browse our extensive range of beads for every occasion and style
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-32">
-            {[...featuredProducts, ...monthProducts.slice(0, 2)].map(
-              (product, index) => (
-                <div
-                  key={`${product.id}-${index}`}
-                  className="animate-fade-in-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <ProductCard
-                    product={{ ...product, id: product.id + index }}
-                  />
-                </div>
-              )
-            )}
-          </div>
-        </div>
+        
       </section>
     </div>
   );

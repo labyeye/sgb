@@ -1,9 +1,9 @@
 import React from 'react';
+import { useHref } from 'react-router-dom';
 
 interface Product {
   id: number;
   name: string;
-  price: number;
   image: string;
   category: string;
   size: string;
@@ -89,10 +89,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               <span className="font-medium">{product.color}</span>
             </div>
           </div>
-          
-          <p className="text-2xl font-bold text-yellow-600">
-            ₹{product.price.toLocaleString()}
-          </p>
+
           <button className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-medium py-3 px-6 rounded-2xl hover:from-yellow-500 hover:to-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm">
             Buy Now
           </button>

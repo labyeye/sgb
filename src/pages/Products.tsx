@@ -12,7 +12,6 @@ const Products = () => {
     {
       id: 1,
       name: "Golden Pearl Beads",
-      price: 2500,
       image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1749526685712",
       category: "Pearl Beads",
       size: "3mm",
@@ -21,7 +20,6 @@ const Products = () => {
     {
       id: 2,
       name: "Crystal Stone Beads",
-      price: 1800,
       image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1749526685693",
       category: "Crystal Beads",
       size: "4mm",
@@ -30,7 +28,6 @@ const Products = () => {
     {
       id: 3,
       name: "Silk Thread Beads",
-      price: 1200,
       image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1749526685661",
       category: "Thread Beads",
       size: "2mm",
@@ -39,7 +36,6 @@ const Products = () => {
     {
       id: 4,
       name: "Metallic Sequin Beads",
-      price: 3200,
       image: "https://ik.imagekit.io/os1mzoooe/6.png?updatedAt=1749526685650",
       category: "Sequin Beads",
       size: "5mm",
@@ -48,7 +44,6 @@ const Products = () => {
     {
       id: 5,
       name: "Traditional Kundan Beads",
-      price: 4500,
       image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1749526685663",
       category: "Kundan Beads",
       size: "6mm",
@@ -57,7 +52,6 @@ const Products = () => {
     {
       id: 6,
       name: "Mirror Work Beads",
-      price: 2800,
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1749526685611",
       category: "Mirror Beads",
       size: "8mm",
@@ -66,7 +60,7 @@ const Products = () => {
     {
       id: 7,
       name: "Zardozi Beads",
-      price: 3800,
+
       image: "https://ik.imagekit.io/os1mzoooe/10.png?updatedAt=1749527932040",
       category: "Zardozi Beads",
       size: "4mm",
@@ -75,7 +69,7 @@ const Products = () => {
     {
       id: 8,
       name: "Antique Gold Beads",
-      price: 5200,
+  
       image: "https://ik.imagekit.io/os1mzoooe/9.png?updatedAt=1749527931942",
       category: "Gold Beads",
       size: "5mm",
@@ -84,7 +78,7 @@ const Products = () => {
     {
       id: 9,
       name: "Rajasthani Mirror Beads",
-      price: 2200,
+
       image: "https://ik.imagekit.io/os1mzoooe/8.png?updatedAt=1749527931588",
       category: "Mirror Beads",
       size: "7mm",
@@ -98,9 +92,8 @@ const Products = () => {
     return allProducts.filter(product => {
       const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
-      const matchesPrice = product.price >= priceRange[0] && product.price <= priceRange[1];
       
-      return matchesSearch && matchesCategory && matchesPrice;
+      return matchesSearch && matchesCategory;
     });
   }, [searchTerm, selectedCategory, priceRange]);
 
@@ -170,25 +163,8 @@ const Products = () => {
                   <option key={category} value={category}>{category}</option>
                 ))}
               </select>
-
-              {/* Price Range */}
-              <div className="flex items-center space-x-4">
-                <span className="text-gray-600 font-medium">Price:</span>
-                <input
-                  type="range"
-                  min="0"
-                  max="10000"
-                  step="100"
-                  value={priceRange[1]}
-                  onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
-                  className="w-32"
-                />
-                <span className="text-yellow-600 font-medium">₹{priceRange[1].toLocaleString()}</span>
-              </div>
             </div>
           </div>
-
-          {/* Mobile Filters */}
           {showFilters && (
             <div className="mt-6 p-6 bg-white/80 backdrop-blur-sm rounded-2xl lg:hidden animate-fade-in border border-gray-200/50">
               <div className="flex justify-between items-center mb-4">

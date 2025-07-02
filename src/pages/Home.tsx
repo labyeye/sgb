@@ -30,7 +30,6 @@ const Home = () => {
     {
       id: 1,
       name: "Golden Pearl Beads",
-      price: 2500,
       image: "https://ik.imagekit.io/os1mzoooe/8.png?updatedAt=1749527931588",
       category: "Pearl Beads",
       size: "3mm",
@@ -39,7 +38,6 @@ const Home = () => {
     {
       id: 2,
       name: "Crystal Stone Beads",
-      price: 1800,
       image: "https://ik.imagekit.io/os1mzoooe/9.png?updatedAt=1749527931942",
       category: "Crystal Beads",
       size: "4mm",
@@ -48,7 +46,6 @@ const Home = () => {
     {
       id: 3,
       name: "Silk Thread Beads",
-      price: 1200,
       image: "https://ik.imagekit.io/os1mzoooe/10.png?updatedAt=1749527932040",
       category: "Thread Beads",
       size: "2mm",
@@ -57,7 +54,7 @@ const Home = () => {
     {
       id: 4,
       name: "Metallic Sequin Beads",
-      price: 3200,
+
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1749526685611",
       category: "Sequin Beads",
       size: "5mm",
@@ -69,7 +66,7 @@ const Home = () => {
     {
       id: 1,
       name: "Golden Pearl Beads",
-      price: 2500,
+
       image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1749526685712",
       category: "Pearl Beads",
       size: "3mm",
@@ -78,7 +75,6 @@ const Home = () => {
     {
       id: 2,
       name: "Crystal Stone Beads",
-      price: 1800,
       image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1749526685693",
       category: "Crystal Beads",
       size: "4mm",
@@ -87,7 +83,6 @@ const Home = () => {
     {
       id: 3,
       name: "Silk Thread Beads",
-      price: 1200,
       image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1749526685661",
       category: "Thread Beads",
       size: "2mm",
@@ -96,7 +91,6 @@ const Home = () => {
     {
       id: 4,
       name: "Metallic Sequin Beads",
-      price: 3200,
       image: "https://ik.imagekit.io/os1mzoooe/6.png?updatedAt=1749526685650",
       category: "Sequin Beads",
       size: "5mm",
@@ -142,7 +136,6 @@ const Home = () => {
             alt="Hero Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
 
           {/* Floating Decorative Elements */}
           <div className="absolute top-20 left-20 w-32 h-32 opacity-20">
@@ -237,7 +230,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl font-bold text-black mb-4">
-              Featured Bead Collections
+              Hot Selling Beads
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Discover our handpicked selection of premium beads perfect for
@@ -260,7 +253,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl font-bold text-black mb-4">
-              Best Sellers this Month
+              Trending Colors
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               The most popular bead collections this month, loved by our
@@ -421,7 +414,25 @@ const Home = () => {
                       ></div>
                     </div>
                     <p className="text-sm text-gray-600 mt-1">
-                      Tiny - Perfect for delicate jewelry and embroidery
+                      Tiny - Perfect for premium embroidery designs
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-200 border-2 border-yellow-300 flex items-center justify-center mr-4">
+                    <span className="text-xs font-bold text-yellow-800">
+                      2.5mm
+                    </span>
+                  </div>
+                  <div className="flex-1">
+                    <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-yellow-400"
+                        style={{ width: "30%" }}
+                      ></div>
+                    </div>
+                    <p className="text-sm text-gray-600 mt-1">
+                      Small - Perfect for cost effective and regular design
                     </p>
                   </div>
                 </div>
@@ -440,50 +451,12 @@ const Home = () => {
                       ></div>
                     </div>
                     <p className="text-sm text-gray-600 mt-1">
-                      Standard - Versatile for most jewelry projects
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-100 to-orange-200 border-2 border-orange-300 flex items-center justify-center mr-4">
-                    <span className="text-base font-bold text-orange-800">
-                      6mm
-                    </span>
-                  </div>
-                  <div className="flex-1">
-                    <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-orange-400"
-                        style={{ width: "60%" }}
-                      ></div>
-                    </div>
-                    <p className="text-sm text-gray-600 mt-1">
-                      Large - Ideal for statement pieces and home decor
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-red-100 to-red-200 border-2 border-red-300 flex items-center justify-center mr-4">
-                    <span className="text-lg font-bold text-red-800">8mm+</span>
-                  </div>
-                  <div className="flex-1">
-                    <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-red-400"
-                        style={{ width: "80%" }}
-                      ></div>
-                    </div>
-                    <p className="text-sm text-gray-600 mt-1">
-                      Extra Large - For bold designs and centerpieces
+                      Standard - Perfect for premium embroidery work
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Shape Guide */}
             <div className="bg-gray-50/50 p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <h3 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
                 <svg
@@ -525,383 +498,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-
-          {/* Real-Life Comparison */}
-          <div className="mt-16 bg-yellow-50/50 p-8 rounded-3xl border border-yellow-100">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">
-              Real-Life Size Comparison
-            </h3>
-            <div className="flex items-center justify-between px-4">
-              {[2, 4, 6, 8].map((mm) => (
-                <div key={mm} className="text-center">
-                  <div
-                    className="mx-auto rounded-full bg-white border-2 border-yellow-300 shadow-inner"
-                    style={{
-                      width: `${mm * 4}px`,
-                      height: `${mm * 4}px`,
-                      background:
-                        "radial-gradient(circle, #fff 30%, #fef3c7 100%)",
-                    }}
-                  ></div>
-                  <p className="text-sm font-medium mt-2 text-gray-700">
-                    {mm}mm
-                  </p>
-                  <p className="text-xs text-gray-500 mt-1">
-                    {mm === 2 && "Seed bead"}
-                    {mm === 4 && "Standard bead"}
-                    {mm === 6 && "Pendant size"}
-                    {mm === 8 && "Focal bead"}
-                  </p>
-                </div>
-              ))}
-              <div className="text-center">
-                <div className="mx-auto w-10 h-10 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <p className="text-sm font-medium mt-2 text-gray-700">Coin</p>
-                <p className="text-xs text-gray-500 mt-1">for reference</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
-
-      {/* Shop by Material */}
-      <section className="py-20 bg-transparent relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl font-bold text-black mb-4">
-              Shop by Material
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Explore our diverse range of bead materials for every crafting
-              need
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            {/* Pearl Beads */}
-            <div className="relative group overflow-hidden rounded-2xl backdrop-blur-sm bg-white/30 hover:bg-white/50 transition-all duration-500 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl animate-fade-in-up">
-              <div className="p-6 flex flex-col items-center text-center">
-                <div className="relative w-20 h-20 mb-4">
-                  <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <defs>
-                      <radialGradient
-                        id="pearlGradient"
-                        cx="50%"
-                        cy="50%"
-                        r="50%"
-                      >
-                        <stop offset="0%" stopColor="#f5f5f5" />
-                        <stop offset="100%" stopColor="#e0e0e0" />
-                      </radialGradient>
-                      <filter
-                        id="pearlFilter"
-                        x="-20%"
-                        y="-20%"
-                        width="140%"
-                        height="140%"
-                      >
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-                        <feComposite in2="SourceAlpha" operator="in" />
-                      </filter>
-                    </defs>
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="40"
-                      fill="url(#pearlGradient)"
-                      filter="url(#pearlFilter)"
-                    />
-                    <circle cx="35" cy="35" r="10" fill="white" opacity="0.8" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-medium text-gray-800 group-hover:text-black">
-                  Pearl Beads
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">120+ variants</p>
-              </div>
-              <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-pink-200/20 rounded-full filter blur-3xl"></div>
-              </div>
-            </div>
-
-            {/* Crystal Beads */}
-            <div
-              className="relative group overflow-hidden rounded-2xl backdrop-blur-sm bg-white/30 hover:bg-white/50 transition-all duration-500 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl animate-fade-in-up"
-              style={{ animationDelay: "0.1s" }}
-            >
-              <div className="p-6 flex flex-col items-center text-center">
-                <div className="relative w-20 h-20 mb-4">
-                  <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <defs>
-                      <linearGradient
-                        id="crystalGradient"
-                        x1="0%"
-                        y1="0%"
-                        x2="100%"
-                        y2="100%"
-                      >
-                        <stop offset="0%" stopColor="#38bdf8" />
-                        <stop offset="100%" stopColor="#7dd3fc" />
-                      </linearGradient>
-                    </defs>
-                    <polygon
-                      points="50,5 95,35 95,75 50,95 5,75 5,35"
-                      fill="url(#crystalGradient)"
-                      stroke="#bfdbfe"
-                      strokeWidth="2"
-                    />
-                    <path
-                      d="M50,5 L50,95 M5,35 L95,75 M5,75 L95,35"
-                      stroke="white"
-                      strokeWidth="2"
-                      opacity="0.6"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-medium text-gray-800 group-hover:text-black">
-                  Crystal Beads
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">90+ variants</p>
-              </div>
-              <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="absolute bottom-0 left-0 w-32 h-32 bg-blue-200/20 rounded-full filter blur-3xl"></div>
-              </div>
-            </div>
-
-            {/* Metal Beads */}
-            <div
-              className="relative group overflow-hidden rounded-2xl backdrop-blur-sm bg-white/30 hover:bg-white/50 transition-all duration-500 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl animate-fade-in-up"
-              style={{ animationDelay: "0.2s" }}
-            >
-              <div className="p-6 flex flex-col items-center text-center">
-                <div className="relative w-20 h-20 mb-4">
-                  <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <defs>
-                      <linearGradient
-                        id="metalGradient"
-                        x1="0%"
-                        y1="0%"
-                        x2="100%"
-                        y2="100%"
-                      >
-                        <stop offset="0%" stopColor="#d4d4d4" />
-                        <stop offset="50%" stopColor="#a3a3a3" />
-                        <stop offset="100%" stopColor="#d4d4d4" />
-                      </linearGradient>
-                      <filter
-                        id="metalShine"
-                        x="-20%"
-                        y="-20%"
-                        width="140%"
-                        height="140%"
-                      >
-                        <feGaussianBlur
-                          in="SourceGraphic"
-                          stdDeviation="2"
-                          result="blur"
-                        />
-                        <feSpecularLighting
-                          in="blur"
-                          surfaceScale="5"
-                          specularConstant="0.8"
-                          specularExponent="20"
-                          lightingColor="#fff"
-                          result="spec"
-                        >
-                          <fePointLight x="20" y="20" z="50" />
-                        </feSpecularLighting>
-                        <feComposite
-                          in="spec"
-                          in2="SourceGraphic"
-                          operator="in"
-                          result="composite"
-                        />
-                      </filter>
-                    </defs>
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="40"
-                      fill="url(#metalGradient)"
-                      filter="url(#metalShine)"
-                    />
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="30"
-                      fill="none"
-                      stroke="#525252"
-                      strokeWidth="2"
-                      strokeDasharray="5,3"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-medium text-gray-800 group-hover:text-black">
-                  Metal Beads
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">75+ variants</p>
-              </div>
-              <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-gray-200/20 rounded-full filter blur-3xl"></div>
-              </div>
-            </div>
-
-            {/* Thread Beads */}
-            <div
-              className="relative group overflow-hidden rounded-2xl backdrop-blur-sm bg-white/30 hover:bg-white/50 transition-all duration-500 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl animate-fade-in-up"
-              style={{ animationDelay: "0.3s" }}
-            >
-              <div className="p-6 flex flex-col items-center text-center">
-                <div className="relative w-20 h-20 mb-4">
-                  <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <defs>
-                      <linearGradient
-                        id="threadGradient"
-                        x1="0%"
-                        y1="0%"
-                        x2="100%"
-                        y2="100%"
-                      >
-                        <stop offset="0%" stopColor="#f97316" />
-                        <stop offset="100%" stopColor="#f59e0b" />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      d="M20,50 Q35,20 50,50 T80,50"
-                      fill="none"
-                      stroke="url(#threadGradient)"
-                      strokeWidth="8"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M20,60 Q35,30 50,60 T80,60"
-                      fill="none"
-                      stroke="url(#threadGradient)"
-                      strokeWidth="8"
-                      strokeLinecap="round"
-                      opacity="0.7"
-                    />
-                    <path
-                      d="M20,40 Q35,10 50,40 T80,40"
-                      fill="none"
-                      stroke="url(#threadGradient)"
-                      strokeWidth="8"
-                      strokeLinecap="round"
-                      opacity="0.7"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-medium text-gray-800 group-hover:text-black">
-                  Thread Beads
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">60+ variants</p>
-              </div>
-              <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="absolute bottom-0 right-0 w-32 h-32 bg-orange-200/20 rounded-full filter blur-3xl"></div>
-              </div>
-            </div>
-
-            {/* Stone Beads */}
-            <div
-              className="relative group overflow-hidden rounded-2xl backdrop-blur-sm bg-white/30 hover:bg-white/50 transition-all duration-500 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl animate-fade-in-up"
-              style={{ animationDelay: "0.4s" }}
-            >
-              <div className="p-6 flex flex-col items-center text-center">
-                <div className="relative w-20 h-20 mb-4">
-                  <svg viewBox="0 0 100 100" className="w-full h-full">
-                    <defs>
-                      <linearGradient
-                        id="stoneGradient"
-                        x1="0%"
-                        y1="0%"
-                        x2="100%"
-                        y2="100%"
-                      >
-                        <stop offset="0%" stopColor="#10b981" />
-                        <stop offset="100%" stopColor="#34d399" />
-                      </linearGradient>
-                      <filter
-                        id="stoneTexture"
-                        x="-20%"
-                        y="-20%"
-                        width="140%"
-                        height="140%"
-                      >
-                        <feTurbulence
-                          type="fractalNoise"
-                          baseFrequency="0.05"
-                          numOctaves="2"
-                          result="noise"
-                        />
-                        <feDiffuseLighting
-                          in="noise"
-                          lightingColor="#fff"
-                          surfaceScale="2"
-                          result="diffuse"
-                        >
-                          <feDistantLight azimuth="45" elevation="60" />
-                        </feDiffuseLighting>
-                        <feComposite
-                          in="SourceGraphic"
-                          in2="diffuse"
-                          operator="arithmetic"
-                          k1="0"
-                          k2="1"
-                          k3="1"
-                          k4="0"
-                        />
-                      </filter>
-                    </defs>
-                    <path
-                      d="M20,20 L80,20 L90,50 L80,80 L20,80 L10,50 Z"
-                      fill="url(#stoneGradient)"
-                      filter="url(#stoneTexture)"
-                      stroke="#065f46"
-                      strokeWidth="2"
-                    />
-                    <path
-                      d="M30,30 L70,30 L75,50 L70,70 L30,70 L25,50 Z"
-                      fill="none"
-                      stroke="#a7f3d0"
-                      strokeWidth="1"
-                      opacity="0.5"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-medium text-gray-800 group-hover:text-black">
-                  Stone Beads
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">85+ variants</p>
-              </div>
-              <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="absolute top-0 left-0 w-32 h-32 bg-emerald-200/20 rounded-full filter blur-3xl"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Background decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full -z-20 opacity-10">
-          <div className="absolute top-20 left-1/4 w-64 h-64 rounded-full bg-yellow-200/30 filter blur-3xl"></div>
-          <div className="absolute bottom-20 right-1/4 w-64 h-64 rounded-full bg-blue-200/30 filter blur-3xl"></div>
-        </div>
-      </section>
-      {/* More Products Grid */}
       <section className="py-20 bg-gradient-to-br from-gray-50/80 to-white/90 backdrop-blur-sm relative">
         <div className="absolute top-20 left-20 w-48 h-48 opacity-5">
           <svg

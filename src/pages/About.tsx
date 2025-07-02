@@ -45,7 +45,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fade-in-up">
             <h1 className="text-5xl font-bold text-black mb-6">
-              About <span className="text-black-600">Surat Glass Beads</span>
+              About <span className="text-yellow-600">Surat</span><span className="text-yellow-600"> Glass Beads</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               At Surat Glass Beads, we specialize in importing premium glass beads for embroidery, 
@@ -88,11 +88,11 @@ const About = () => {
                   continuously expanding our range—bringing new varieties and styles to meet the evolving 
                   needs of global manufacturers.
                 </p>
-                <div className="mt-8 p-6 bg-blue-50 rounded-2xl border border-blue-100">
-                  <p className="text-blue-800 font-semibold text-lg text-center">
+                <div className="mt-8 p-6 bg-yellow-50 rounded-2xl border border-blue-100">
+                  <p className="text-yellow-800 font-semibold text-lg text-center">
                     Efficient. Reliable. Future-ready.
                   </p>
-                  <p className="text-blue-700 text-center mt-2 text-xl">
+                  <p className="text-yellow-700 text-center mt-2 text-xl">
                     Surat Glass Beads is your strategic partner in profitable, high-quality production.
                   </p>
                 </div>
@@ -152,8 +152,8 @@ const About = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-100/80 to-blue-200/80 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:from-blue-200/80 group-hover:to-blue-300/80 transition-all duration-500 border border-blue-200/50">
-                    <value.icon className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-100/80 to-yellow-200/80 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:from-yellow-200/80 group-hover:to-yellow-300/80 transition-all duration-500 border border-blue-200/50">
+                    <value.icon className="w-8 h-8 text-yellow-600" />
                   </div>
                   <div className="absolute -top-2 -right-2 w-8 h-8 opacity-30 group-hover:opacity-50 transition-opacity duration-500">
                     <svg viewBox="0 0 100 100" className="w-full h-full group-hover:scale-125 transition-transform duration-500">
@@ -167,7 +167,7 @@ const About = () => {
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-black mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-xl font-semibold text-black mb-4 group-hover:text-yellow-600 transition-colors duration-300">
                   {value.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">

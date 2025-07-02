@@ -44,7 +44,7 @@ const Footer = () => {
                   className="w-8 h-8 rounded-full object-cover"
                 />
               </div>
-              <span className="text-xl font-bold">BeadCraft</span>
+              <span className="text-xl font-bold">Surat Glass Beads</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Premium beads for sarees, lehengas, and traditional clothing.
@@ -103,24 +103,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-semibold text-yellow-400">
-              Newsletter
-            </h3>
-            <p className="text-gray-300">
-              Get updates on new bead collections and offers
-            </p>
-            <div className="space-y-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-3 bg-gray-800/50 backdrop-blur-sm text-white rounded-2xl border border-gray-700/50 focus:border-yellow-400 focus:outline-none transition-colors duration-300"
-              />
-              <button className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-medium py-3 px-6 rounded-2xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105">
-                Subscribe
-              </button>
-            </div>
-          </div>
+          
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">

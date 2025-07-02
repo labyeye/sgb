@@ -295,72 +295,7 @@ const Home = () => {
           </svg>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl font-bold text-black mb-4">
-              Why Choose BeadCraft
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              We're committed to delivering exceptional quality beads for your
-              traditional wear
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {aboutSections.map((section, index) => (
-              <div
-                key={index}
-                className="text-center space-y-6 animate-fade-in-up group"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div className="relative">
-                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-yellow-100/80 to-yellow-200/80 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:from-yellow-200/80 group-hover:to-yellow-300/80 transition-all duration-500 border border-yellow-200/50">
-                    <section.icon className="w-12 h-12 text-yellow-600" />
-                  </div>
-                  <div className="absolute -top-4 -right-4 w-16 h-16 opacity-30 group-hover:opacity-50 transition-opacity duration-500">
-                    <svg
-                      viewBox="0 0 100 100"
-                      className="w-full h-full group-hover:scale-125 transition-transform duration-500"
-                    >
-                      <defs>
-                        <radialGradient
-                          id={`aboutGradient${index}`}
-                          cx="50%"
-                          cy="50%"
-                          r="50%"
-                        >
-                          <stop
-                            offset="0%"
-                            stopColor="#D4AF37"
-                            stopOpacity="0.4"
-                          />
-                          <stop
-                            offset="100%"
-                            stopColor="#D4AF37"
-                            stopOpacity="0"
-                          />
-                        </radialGradient>
-                      </defs>
-                      <circle
-                        cx="50"
-                        cy="50"
-                        r="30"
-                        fill={`url(#aboutGradient${index})`}
-                        filter="blur(8px)"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold text-black group-hover:text-yellow-600 transition-colors duration-300">
-                  {section.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {section.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </section>
       {/* Bead Size & Shape Guide Section */}
       <section className="py-20 bg-white relative overflow-hidden">
@@ -407,14 +342,8 @@ const Home = () => {
                     </span>
                   </div>
                   <div className="flex-1">
-                    <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-yellow-400"
-                        style={{ width: "20%" }}
-                      ></div>
-                    </div>
                     <p className="text-sm text-gray-600 mt-1">
-                      Tiny - Perfect for premium embroidery designs
+                      Small - Perfect for premium embroidery designs
                     </p>
                   </div>
                 </div>
@@ -425,14 +354,8 @@ const Home = () => {
                     </span>
                   </div>
                   <div className="flex-1">
-                    <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-yellow-400"
-                        style={{ width: "30%" }}
-                      ></div>
-                    </div>
                     <p className="text-sm text-gray-600 mt-1">
-                      Small - Perfect for cost effective and regular design
+                      Standard - Perfect for cost effective and regular design
                     </p>
                   </div>
                 </div>
@@ -444,14 +367,8 @@ const Home = () => {
                     </span>
                   </div>
                   <div className="flex-1">
-                    <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-amber-400"
-                        style={{ width: "40%" }}
-                      ></div>
-                    </div>
                     <p className="text-sm text-gray-600 mt-1">
-                      Standard - Perfect for premium embroidery work
+                      Big - Used together with 2mm and 2.5mm beads
                     </p>
                   </div>
                 </div>

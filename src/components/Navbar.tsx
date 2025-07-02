@@ -67,7 +67,7 @@ const Navbar = () => {
                 className={`relative px-3 py-2 text-sm font-medium transition-colors duration-300 ${
                   location.pathname === link.path
                     ? 'text-yellow-600'
-                    : 'text-white hover:text-yellow-600'
+                    : 'text-yellow-600 hover:text-yellow-600'
                 }`}
               >
                 {link.name}

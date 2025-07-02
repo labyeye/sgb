@@ -45,7 +45,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fade-in-up">
             <h1 className="text-5xl font-bold text-black mb-6">
-              About <span className="text-blue-600">Surat Glass Beads</span>
+              About <span className="text-black-600">Surat Glass Beads</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               At Surat Glass Beads, we specialize in importing premium glass beads for embroidery, 

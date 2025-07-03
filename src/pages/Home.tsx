@@ -29,93 +29,86 @@ const Home = () => {
   const featuredProducts = [
     {
       id: 1,
-      name: "Golden Pearl Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/8.png?updatedAt=1749527931588",
-      category: "Pearl Beads",
-      size: "3mm",
-      color: "Gold",
+      name: "Silver Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1749526685661",
+      category: "Silver Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB21",
     },
     {
       id: 2,
-      name: "Crystal Stone Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/9.png?updatedAt=1749527931942",
-      category: "Crystal Beads",
-      size: "4mm",
-      color: "Clear",
+      name: "Milky White Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751577008304",
+      category: "Milky White Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB121",
     },
     {
       id: 3,
-      name: "Silk Thread Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/10.png?updatedAt=1749527932040",
-      category: "Thread Beads",
-      size: "2mm",
-      color: "Multicolor",
+      name: "Rose Gold Light Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1751577008492",
+      category: "Rose Gold Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB39 Light",
     },
     {
-      id: 4,
-      name: "Metallic Sequin Beads",
-
-      image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1749526685611",
-      category: "Sequin Beads",
-      size: "5mm",
-      color: "Silver",
+      id: 1,
+      name: "Rose Gold Dark Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751577008317",
+      category: "Rose Gold Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB39 Dark",
+    },
+    {
+      id: 1,
+      name: "Light Rabdi Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1751577004245",
+      category: "Light Rabdi Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB16",
     },
   ];
 
   const monthProducts = [
     {
       id: 1,
-      name: "Golden Pearl Beads",
-
-      image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1749526685712",
-      category: "Pearl Beads",
-      size: "3mm",
-      color: "Gold",
+      name: "Silver Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1749526685661",
+      category: "Silver Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB21",
     },
     {
       id: 2,
-      name: "Crystal Stone Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1749526685693",
-      category: "Crystal Beads",
-      size: "4mm",
-      color: "Clear",
+      name: "Milky White Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751577008304",
+      category: "Milky White Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB121",
     },
     {
       id: 3,
-      name: "Silk Thread Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1749526685661",
-      category: "Thread Beads",
-      size: "2mm",
-      color: "Multicolor",
+      name: "Rose Gold Light Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1751577008492",
+      category: "Rose Gold Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB39 Light",
     },
     {
-      id: 4,
-      name: "Metallic Sequin Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/6.png?updatedAt=1749526685650",
-      category: "Sequin Beads",
-      size: "5mm",
-      color: "Silver",
-    },
-  ];
-
-  const aboutSections = [
-    {
-      icon: Sparkles,
-      title: "Premium Quality",
-      description:
-        "Each bead is carefully selected and tested for durability, ensuring your sarees and lehengas maintain their elegance for years.",
+      id: 1,
+      name: "Rose Gold Dark Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751577008317",
+      category: "Rose Gold Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB39 Dark",
     },
     {
-      icon: Award,
-      title: "Traditional Craft",
-      description:
-        "Preserving age-old techniques while embracing modern designs, we create beads that honor tradition and contemporary style.",
-    },
-    {
-      icon: Truck,
-      title: "Fast Delivery",
-      description:
-        "Quick and secure delivery across India, ensuring your bead orders reach you in perfect condition and on time.",
+      id: 1,
+      name: "Light Rabdi Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1751577004245",
+      category: "Light Rabdi Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB16",
     },
   ];
 
@@ -294,8 +287,6 @@ const Home = () => {
             />
           </svg>
         </div>
-
-        
       </section>
       {/* Bead Size & Shape Guide Section */}
       <section className="py-20 bg-white relative overflow-hidden">
@@ -316,6 +307,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Size Guide */}
+            {/* Size Guide */}
             <div className="bg-gray-50/50 p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <h3 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
                 <svg
@@ -335,39 +327,82 @@ const Home = () => {
                 Size Reference Chart
               </h3>
               <div className="space-y-6">
+                {/* 2mm */}
                 <div className="flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-200 border-2 border-yellow-300 flex items-center justify-center mr-4">
-                    <span className="text-xs font-bold text-yellow-800">
+                  <div className="relative mr-4 flex items-center justify-center">
+                    {/* Cylinder shape */}
+                    <div
+                      className="w-12 h-6 bg-gradient-to-b from-yellow-200 to-yellow-300 border-2 border-yellow-400 rounded-full"
+                      style={{
+                        transform: "perspective(100px) rotateX(20deg)",
+                        boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+                      }}
+                    >
+                      {/* Top circle */}
+                      <div className="absolute -top-1 left-0 right-0 h-2 bg-yellow-300 rounded-full border border-yellow-400"></div>
+                      {/* Bottom circle */}
+                      <div className="absolute -bottom-1 left-0 right-0 h-2 bg-yellow-400 rounded-full"></div>
+                    </div>
+                    <span className="absolute text-xs font-bold text-yellow-800">
                       2mm
                     </span>
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-sm text-gray-600">
                       Small - Perfect for premium embroidery designs
                     </p>
                   </div>
                 </div>
+
+                {/* 2.5mm */}
                 <div className="flex items-center">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-200 border-2 border-yellow-300 flex items-center justify-center mr-4">
-                    <span className="text-xs font-bold text-yellow-800">
+                  <div className="relative mr-4 flex items-center justify-center">
+                    {/* Cylinder shape */}
+                    <div
+                      className="w-14 h-7 bg-gradient-to-b from-yellow-200 to-yellow-300 border-2 border-yellow-400 rounded-full"
+                      style={{
+                        transform: "perspective(100px) rotateX(20deg)",
+                        boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+                      }}
+                    >
+                      {/* Top circle */}
+                      <div className="absolute -top-1 left-0 right-0 h-2 bg-yellow-300 rounded-full border border-yellow-400"></div>
+                      {/* Bottom circle */}
+                      <div className="absolute -bottom-1 left-0 right-0 h-2 bg-yellow-400 rounded-full"></div>
+                    </div>
+                    <span className="absolute text-xs font-bold text-yellow-800">
                       2.5mm
                     </span>
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-sm text-gray-600">
                       Standard - Perfect for cost effective and regular design
                     </p>
                   </div>
                 </div>
 
+                {/* 4mm */}
                 <div className="flex items-center">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-100 to-amber-200 border-2 border-amber-300 flex items-center justify-center mr-4">
-                    <span className="text-sm font-bold text-amber-800">
+                  <div className="relative mr-4 flex items-center justify-center">
+                    {/* Cylinder shape */}
+                    <div
+                      className="w-16 h-8 bg-gradient-to-b from-amber-200 to-amber-300 border-2 border-amber-400 rounded-full"
+                      style={{
+                        transform: "perspective(100px) rotateX(20deg)",
+                        boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+                      }}
+                    >
+                      {/* Top circle */}
+                      <div className="absolute -top-1 left-0 right-0 h-2 bg-amber-300 rounded-full border border-amber-400"></div>
+                      {/* Bottom circle */}
+                      <div className="absolute -bottom-1 left-0 right-0 h-2 bg-amber-400 rounded-full"></div>
+                    </div>
+                    <span className="absolute text-sm font-bold text-amber-800">
                       4mm
                     </span>
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-sm text-gray-600">
                       Big - Used together with 2mm and 2.5mm beads
                     </p>
                   </div>
@@ -443,8 +478,6 @@ const Home = () => {
             />
           </svg>
         </div>
-
-        
       </section>
     </div>
   );

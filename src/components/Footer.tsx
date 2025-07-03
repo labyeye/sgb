@@ -8,7 +8,7 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import logo from "../assets/logosbg.jpeg";
+import logo from "../assets/logosgb.png";
 
 const Footer = () => {
   return (

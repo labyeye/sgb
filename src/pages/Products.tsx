@@ -108,6 +108,7 @@ const Products = () => {
     "Rose Gold Beads",
     "Silver Beads",
     "Milky White Beads",
+    "Black Beads",
   ];
 
   const filteredProducts = useMemo(() => {

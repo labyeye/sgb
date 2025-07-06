@@ -83,6 +83,14 @@ const Products = () => {
       size: ["2mm", "2.5mm"],
       color: "SGB601",
     },
+    {
+      id: 10,
+      name: "Black Beads",
+      image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751811751969",
+      category: "Black Beads",
+      size: ["2mm", "2.5mm"],
+      color: "SGB49",
+    },
   ];
   const allSizes = useMemo(() => {
     const sizes = new Set<string>();

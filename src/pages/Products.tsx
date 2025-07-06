@@ -15,7 +15,7 @@ const Products = () => {
       name: "Silver Beads",
       image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1751811752472",
       category: "Silver Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB21",
     },
     {
@@ -23,7 +23,7 @@ const Products = () => {
       name: "Golden Beads",
       image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751811751230",
       category: "Golden Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB22",
     },
     {
@@ -31,7 +31,7 @@ const Products = () => {
       name: "Milky White Beads",
       image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751577008304",
       category: "Milky White Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB121",
     },
     {
@@ -39,7 +39,7 @@ const Products = () => {
       name: "Rose Gold Light Beads",
       image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1751577008492",
       category: "Rose Gold Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB39 Light",
     },
     {
@@ -47,7 +47,7 @@ const Products = () => {
       name: "Rose Gold Dark Beads",
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751577008317",
       category: "Rose Gold Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB39 Dark",
     },
     {
@@ -55,7 +55,7 @@ const Products = () => {
       name: "Light Rabdi Beads",
       image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1751577004245",
       category: "Light Rabdi Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB16",
     },
     {
@@ -63,7 +63,7 @@ const Products = () => {
       name: "Silver Beads",
       image: "https://ik.imagekit.io/os1mzoooe/7.png?updatedAt=1751811751217",
       category: "Silver Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB573",
     },
     {
@@ -71,7 +71,7 @@ const Products = () => {
       name: "Silver Beads",
       image: "https://ik.imagekit.io/os1mzoooe/8.png?updatedAt=1751811751240",
       category: "Silver Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB576",
     },
 
@@ -80,7 +80,7 @@ const Products = () => {
       name: "Golden Beads",
       image: "https://ik.imagekit.io/os1mzoooe/9.png?updatedAt=1751811752189",
       category: "Golden Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB601",
     },
     {
@@ -88,7 +88,7 @@ const Products = () => {
       name: "Black Beads",
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751811751969",
       category: "Black Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm", 
       color: "SGB49",
     },
   ];

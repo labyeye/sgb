@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
-import { Sparkles, Truck, Award } from "lucide-react";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -32,7 +31,7 @@ const Home = () => {
       name: "Silver Beads",
       image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1751811752472",
       category: "Silver Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB21",
     },
     {
@@ -40,7 +39,7 @@ const Home = () => {
       name: "Golden Beads",
       image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751811751230",
       category: "Golden Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB22",
     },
     {
@@ -48,7 +47,7 @@ const Home = () => {
       name: "Milky White Beads",
       image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751577008304",
       category: "Milky White Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB121",
     },
     {
@@ -56,7 +55,7 @@ const Home = () => {
       name: "Rose Gold Light Beads",
       image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1751577008492",
       category: "Rose Gold Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB39 Light",
     },
     {
@@ -64,7 +63,7 @@ const Home = () => {
       name: "Rose Gold Dark Beads",
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751577008317",
       category: "Rose Gold Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB39 Dark",
     },
   ];
@@ -75,7 +74,7 @@ const Home = () => {
       name: "Light Rabdi Beads",
       image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1751577004245",
       category: "Light Rabdi Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB16",
     },
     {
@@ -83,7 +82,7 @@ const Home = () => {
       name: "Silver Beads",
       image: "https://ik.imagekit.io/os1mzoooe/7.png?updatedAt=1751811751217",
       category: "Silver Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB573",
     },
     {
@@ -91,7 +90,7 @@ const Home = () => {
       name: "Silver Beads",
       image: "https://ik.imagekit.io/os1mzoooe/8.png?updatedAt=1751811751240",
       category: "Silver Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB576",
     },
 
@@ -100,7 +99,7 @@ const Home = () => {
       name: "Golden Beads",
       image: "https://ik.imagekit.io/os1mzoooe/9.png?updatedAt=1751811752189",
       category: "Golden Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB601",
     },
     {
@@ -108,7 +107,7 @@ const Home = () => {
       name: "Black Beads",
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751811751969",
       category: "Black Beads",
-      size: ["2mm", "2.5mm"],
+      size: "2mm",
       color: "SGB49",
     },
   ];

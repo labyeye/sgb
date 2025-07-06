@@ -5,7 +5,7 @@ interface Product {
   name: string;
   image: string;
   category: string;
-  size: string[]; 
+  size: string; 
   color: string;
 }
 
@@ -88,16 +88,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </h3>
           <div className="flex flex-col items-center gap-2 text-sm text-gray-600">
             <div className="w-full">
-              <p className="text-gray-500 mb-1">Available Sizes:</p>
+              <p className="text-gray-500 mb-1">Sizes:</p>
               <div className="flex flex-wrap justify-center gap-2">
-                {product.size.map((size) => (
-                  <span
-                    key={size}
+                <span
                     className="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-700 hover:bg-yellow-100 hover:text-yellow-700 transition-colors"
                   >
-                    {size}
+                    {product.size}
                   </span>
-                ))}
+                
               </div>
             </div>
             <div className="flex items-center mt-2">

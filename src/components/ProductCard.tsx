@@ -11,11 +11,12 @@ interface Product {
 
 interface ProductCardProps {
   product: Product;
+  onClick?: () => void;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
   return (
-    <div className="group relative">
+    <div className="group relative" onClick={onClick}>
       <div className="bg-white/80 backdrop-blur-sm rounded-3xl mb-20 p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 relative overflow-visible border border-white/20">
         <div className="absolute -top-10 -right-10 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
           <svg viewBox="0 0 100 100" className="w-full h-full">

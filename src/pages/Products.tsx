@@ -21,14 +21,6 @@ const Products = () => {
       color: "SGB21",
     },
     {
-      id: 2,
-      name: "Golden Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751811751230",
-      category: "Golden Beads",
-      size: "2mm",
-      color: "SGB22",
-    },
-    {
       id: 3,
       name: "Milky White Beads",
       image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751577008304",

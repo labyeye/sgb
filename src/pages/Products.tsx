@@ -208,7 +208,7 @@ const Products = () => {
   };
 
   return (
-    <div className="pt-16 min-h-screen bg-gradient-to-br from-gray-50/80 to-white/90 backdrop-blur-sm relative">
+    <div className="pt-16 min-h-screen overflow-hidden bg-gradient-to-br from-gray-50/80 to-white/90 backdrop-blur-sm relative">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 opacity-5">
         <svg viewBox="0 0 100 100" className="w-full h-full">

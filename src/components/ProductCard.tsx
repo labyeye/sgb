@@ -5,7 +5,7 @@ interface Product {
   name: string;
   image: string;
   category: string;
-  size: string; 
+  size?: string; 
   color: string;
 }
 

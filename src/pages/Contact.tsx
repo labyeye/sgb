@@ -31,25 +31,25 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    {
-      icon: MapPin,
-      title: "Visit Our Store",
-      details: ["123 Textile Market", "Mumbai, Maharashtra 400001", "India"]
-    },
+    // {
+    //   icon: MapPin,
+    //   title: "Visit Our Store",
+    //   details: ["123 Textile Market", "Mumbai, Maharashtra 400001", "India"]
+    // },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91 98765 43210", "+91 98765 43211", "WhatsApp: +91 98765 43212"]
+      details: ["+91 88284 03066",]
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@beadcraft.com", "orders@beadcraft.com", "support@beadcraft.com"]
+      details: ["suratglassbeads@gmail.com"]
     },
     {
       icon: Clock,
       title: "Store Hours",
-      details: ["Monday - Saturday: 9AM - 7PM", "Sunday: 11AM - 5PM", "Festivals: 11AM - 4PM"]
+      details: ["Monday - Saturday: 11AM - 6PM",]
     }
   ];
 

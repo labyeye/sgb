@@ -85,19 +85,19 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-semibold text-yellow-400">Contact</h3>
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
+              {/* <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400" />
                 <span className="text-gray-300">
                   123 Textile Market, Mumbai, India
                 </span>
-              </div>
+              </div> */}
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">+91 98765 43210</span>
+                <span className="text-gray-300">+91 88284 03066</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">info@beadcraft.com</span>
+                <span className="text-gray-300">suratglassbeads@gmail.com</span>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 BeadCraft. All rights reserved. Crafting tradition with
+            © 2025 BeadCraft. All rights reserved. Crafting tradition with
             modern elegance.
           </p>
         </div>

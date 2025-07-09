@@ -31,24 +31,21 @@ const Home = () => {
       name: "Silver Beads",
       image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1751811752472",
       category: "Silver Beads",
-      size: "2mm",
-      color: "SGB21",
+           color: "SGB21",
     },
     {
       id: 2,
       name: "Rose Gold Light Beads",
       image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1751577008492",
       category: "Rose Gold Beads",
-      size: "2mm",
-      color: "SGB39 Light",
+           color: "SGB39 Light",
     },
     {
       id: 3,
       name: "Rose Gold Dark Beads",
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751577008317",
       category: "Rose Gold Beads",
-      size: "2mm",
-      color: "SGB39 Dark",
+           color: "SGB39 Dark",
     },
      {
       id: 11,
@@ -56,53 +53,48 @@ const Home = () => {
       image:
         "https://ik.imagekit.io/os1mzoooe/Beads%202.5/1.png?updatedAt=1751973196277",
       category: "2.5mm",
-      size: "2.5mm",
+      
       color: "SGBDO16",
     },
   ];
 
   const monthProducts = [
     {
-      id: 6,
-      name: "Light Rabdi Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1751577004245",
-      category: "Light Rabdi Beads",
-      size: "2mm",
-      color: "SGB16",
+      id: 11,
+      name: "Blue Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/6.png?updatedAt=1751973121730",
+      category: "2.0mm",
+      
+      color: "SGB5",
     },
-    {
-      id: 7,
-      name: "Silver Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/7.png?updatedAt=1751811751217",
-      category: "Silver Beads",
-      size: "2mm",
-      color: "SGB573",
-    },
-    {
-      id: 8,
-      name: "Silver Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/8.png?updatedAt=1751811751240",
-      category: "Silver Beads",
-      size: "2mm",
-      color: "SGB576",
-    },
-
-    {
-      id: 9,
-      name: "Golden Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/9.png?updatedAt=1751811752189",
-      category: "Golden Beads",
-      size: "2mm",
-      color: "SGB601",
+   {
+      id: 12,
+      name: "Red Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/7.png?updatedAt=1751973196189",
+      category: "2.5mm",
+      
+      color: "SGB5",
     },
     {
       id: 10,
       name: "Black Beads",
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751811751969",
       category: "Black Beads",
-      size: "2mm",
+      
       color: "SGB49",
     },
+    {
+      id: 13,
+      name: "Milky White Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/2.png?updatedAt=1751973195888",
+      category: "2.5mm",
+      
+      color: "SGB121",
+    },
+    
   ];
 
   useEffect(() => {
@@ -262,7 +254,7 @@ const Home = () => {
       </section>
 
       {/* About Sections */}
-      <section className="py-20 bg-white relative">
+      <section className=" bg-white relative">
         <div className="absolute bottom-0 left-0 w-64 h-64 opacity-5">
           <svg viewBox="0 0 100 100" className="w-full h-full">
             <defs>
@@ -282,7 +274,7 @@ const Home = () => {
         </div>
       </section>
       {/* Bead Size & Shape Guide Section */}
-      <section className="py-20 bg-white relative overflow-hidden">
+      <section className=" bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-5">
           <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-yellow-100/30 filter blur-3xl"></div>
           <div className="absolute bottom-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-100/20 filter blur-3xl"></div>
@@ -299,8 +291,6 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Size Guide */}
-            {/* Size Guide */}
             <div className="bg-gray-50/50 p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <h3 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
                 <svg
@@ -325,16 +315,13 @@ const Home = () => {
                   <div className="relative mr-4 flex items-center justify-center">
                     {/* Cylinder shape */}
                     <div
-                      className="w-12 h-6 bg-gradient-to-b from-yellow-200 to-yellow-300 border-2 border-yellow-400 rounded-full"
+                      className="w-10 h-6 bg-gradient-to-b from-yellow-200 to-yellow-300 border-2 border-yellow-400 rounded-md"
                       style={{
-                        transform: "perspective(100px) rotateX(20deg)",
+                        transform: " rotateX(20deg)",
                         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
                       }}
                     >
-                      {/* Top circle */}
-                      <div className="absolute -top-1 left-0 right-0 h-2 bg-yellow-300 rounded-full border border-yellow-400"></div>
-                      {/* Bottom circle */}
-                      <div className="absolute -bottom-1 left-0 right-0 h-2 bg-yellow-400 rounded-full"></div>
+                     
                     </div>
                     <span className="absolute text-xs font-bold text-yellow-800">
                       2mm
@@ -352,16 +339,14 @@ const Home = () => {
                   <div className="relative mr-4 flex items-center justify-center">
                     {/* Cylinder shape */}
                     <div
-                      className="w-14 h-7 bg-gradient-to-b from-yellow-200 to-yellow-300 border-2 border-yellow-400 rounded-full"
+                      className="w-12 h-7 bg-gradient-to-b from-yellow-200 to-yellow-300 border-2 border-yellow-400 rounded-md"
                       style={{
-                        transform: "perspective(100px) rotateX(20deg)",
+                        transform: " rotateX(20deg)",
                         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
                       }}
                     >
-                      {/* Top circle */}
-                      <div className="absolute -top-1 left-0 right-0 h-2 bg-yellow-300 rounded-full border border-yellow-400"></div>
-                      {/* Bottom circle */}
-                      <div className="absolute -bottom-1 left-0 right-0 h-2 bg-yellow-400 rounded-full"></div>
+                     
+                    
                     </div>
                     <span className="absolute text-xs font-bold text-yellow-800">
                       2.5mm
@@ -379,19 +364,16 @@ const Home = () => {
                   <div className="relative mr-4 flex items-center justify-center">
                     {/* Cylinder shape */}
                     <div
-                      className="w-16 h-8 bg-gradient-to-b from-amber-200 to-amber-300 border-2 border-amber-400 rounded-full"
+                      className="w-14 h-7 bg-gradient-to-b from-yellow-200 to-yellow-300 border-2 border-yellow-400 rounded-md"
                       style={{
-                        transform: "perspective(100px) rotateX(20deg)",
+                        transform: " rotateX(20deg)",
                         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
                       }}
                     >
-                      {/* Top circle */}
-                      <div className="absolute -top-1 left-0 right-0 h-2 bg-amber-300 rounded-full border border-amber-400"></div>
-                      {/* Bottom circle */}
-                      <div className="absolute -bottom-1 left-0 right-0 h-2 bg-amber-400 rounded-full"></div>
+                     
                     </div>
-                    <span className="absolute text-sm font-bold text-amber-800">
-                      4mm
+                    <span className="absolute text-xs font-bold text-amber-800">
+                      3.8mm
                     </span>
                   </div>
                   <div className="flex-1">

@@ -31,7 +31,7 @@ const Products = () => {
     {
       id: 4,
       name: "Rose Gold Light Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1751577008492",
+      image: "https://ik.imagekit.io/os1mzoooe/New%20Folder/9.png?updatedAt=1752091334428",
       category: "2.0mm",
       size: "2.0mm",
       color: "SGB39 Light",
@@ -39,7 +39,7 @@ const Products = () => {
     {
       id: 5,
       name: "Rose Gold Dark Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751577008317",
+      image: "https://ik.imagekit.io/os1mzoooe/New%20Folder/6.png?updatedAt=1752091334246",
       category: "2.0mm",
       size: "2.0mm",
       color: "SGB39 Dark",

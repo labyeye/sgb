@@ -4,23 +4,32 @@ import ProductCard from "../components/ProductCard";
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [prevSlide, setPrevSlide] = useState(0);
-
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 500);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
   useEffect(() => {
     const interval = setInterval(() => {
       setPrevSlide(currentSlide);
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, [currentSlide]);
-
   const heroSlides = [
     {
       background:
         "https://ik.imagekit.io/os1mzoooe/White%20Black%20Modern%20Natural%20Skincare%20Products%20Banner.png?updatedAt=1752088324978",
+      backgroundMobile:
+        "https://ik.imagekit.io/os1mzoooe/3.8/Copy%20of%20White%20Black%20Modern%20Natural%20Skincare%20Products%20Banner.png?updatedAt=1752090034655",
     },
     {
       background:
         "https://ik.imagekit.io/os1mzoooe/3.8/White%20Black%20Modern%20Natural%20Skincare%20Products%20Banner%20(2).png?updatedAt=1752088861467",
+      backgroundMobile:
+        "https://ik.imagekit.io/os1mzoooe/3.8/Copy%20of%20White%20Black%20Modern%20Natural%20Skincare%20Products%20Banner.png?updatedAt=1752090034655",
     },
   ];
 
@@ -105,42 +114,37 @@ const Home = () => {
     <div className="overflow-hidden">
       {/* Hero Section */}
       {/* Hero Section */}
-<section className="mt-20 relative h-screen overflow-hidden">
-  {/* Slide Images */}
-  <div className="absolute inset-0">
-    {heroSlides.map((slide, index) => (
-      <img
-        key={index}
-        src={slide.background}
-        alt={`Slide ${index}`}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-          index === currentSlide ? "opacity-100 z-20" : "opacity-0 z-10"
-        }`}
-      />
-    ))}
-  </div>
+      <section className="mt-20 relative h-screen overflow-hidden">
+        {/* Slide Images */}
+        <div className="absolute inset-0">
+  {heroSlides.map((slide, index) => (
+    <img
+      key={index}
+      src={isMobile ? slide.backgroundMobile : slide.background}
+      alt={`Slide ${index}`}
+      className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+        index === currentSlide ? "opacity-100 z-20" : "opacity-0 z-10"
+      }`}
+    />
+  ))}
+</div>
 
-  {/* Floating Decorative Elements */}
-  <div className="absolute top-20 left-20 w-32 h-32 opacity-20 z-30">
-    {/* SVG Gradient */}
-  </div>
-  <div className="absolute bottom-32 right-32 w-24 h-24 opacity-15 z-30">
-    {/* SVG Gradient */}
-  </div>
 
-  {/* Slide Indicators */}
-  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-30">
-    {heroSlides.map((_, index) => (
-      <button
-        key={index}
-        onClick={() => setCurrentSlide(index)}
-        className={`w-3 h-3 rounded-full transition-all duration-300 ${
-          index === currentSlide ? "bg-yellow-400 scale-125" : "bg-white/50"
-        }`}
-      />
-    ))}
-  </div>
-</section>
+        <div className="absolute top-20 left-20 w-32 h-32 opacity-20 z-30"></div>
+        <div className="absolute bottom-32 right-32 w-24 h-24 opacity-15 z-30"></div>
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-30">
+          {heroSlides.map((slide, index) => (
+            <img
+              key={index}
+              src={isMobile ? slide.backgroundMobile : slide.background}
+              alt={`Slide ${index}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+                index === currentSlide ? "opacity-100 z-20" : "opacity-0 z-10"
+              }`}
+            />
+          ))}
+        </div>
+      </section>
 
       {/* Featured Products Slider */}
       <section className="py-20 bg-gradient-to-br from-gray-50/80 to-white/90 backdrop-blur-sm relative">

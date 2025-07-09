@@ -203,7 +203,7 @@ const Products = () => {
         "https://ik.imagekit.io/os1mzoooe/3.8/5.png?updatedAt=1752081871889",
       category: "3.8mm",
       size: "3.8mm",
-      color: "SGB101",
+      color: "SGB121",
     },
     {
       id: 25,

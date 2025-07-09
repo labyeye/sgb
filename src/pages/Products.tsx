@@ -106,7 +106,7 @@ const Products = () => {
     },
     {
       id: 14,
-      name: "Transparent Beads",
+      name: "Transparent Beads Rainbow Color",
       image:
         "https://ik.imagekit.io/os1mzoooe/Beads%202.5/3.png?updatedAt=1751973195216",
       category: "2.5mm",
@@ -222,7 +222,7 @@ const Products = () => {
         "https://ik.imagekit.io/os1mzoooe/3.8/7.png?updatedAt=1752081871900",
       category: "3.8mm",
       size: "3.8mm",
-      color: "SGB21",
+      color: "SGB49",
     },
   ];
   const allSizes = useMemo(() => {

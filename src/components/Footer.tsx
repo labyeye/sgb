@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-300 leading-relaxed">
               Premium beads for Suits, lehengas, and traditional clothing.
-              Crafting elegance with every bead since 1995.
+              Crafting elegance with every bead since 2025.
             </p>
             <div className="flex space-x-4">
               {[Facebook, Twitter, Instagram].map((Icon, index) => (

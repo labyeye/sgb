@@ -48,7 +48,7 @@ const About = () => {
               About <span className="text-yellow-600">Surat</span><span className="text-yellow-600"> Glass Beads</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              At Surat Glass Beads, we specialize in importing premium glass beads for embroidery, 
+              At Surat Glass Beads, we specialize in premium glass beads for embroidery, 
               proudly serving manufacturers across the textile, fashion, and handicraft industries.
             </p>
           </div>

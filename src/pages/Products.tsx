@@ -299,7 +299,7 @@ const Products = () => {
               Our <span className="text-yellow-600">Bead Collections</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover our curated collection of premium beads for sarees,
+              Discover our curated collection of premium beads for Suits,
               lehengas, and traditional Indian wear
             </p>
           </div>

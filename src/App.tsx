@@ -7,6 +7,7 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import './styles/animations.css';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/products/:productId" element={<ProductDetails />} />
         </Routes>
         <Footer />
       </div>

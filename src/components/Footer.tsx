@@ -47,7 +47,7 @@ const Footer = () => {
               <span className="text-xl font-bold">Surat Glass Beads</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Premium beads for sarees, lehengas, and traditional clothing.
+              Premium beads for Suits, lehengas, and traditional clothing.
               Crafting elegance with every bead since 1995.
             </p>
             <div className="flex space-x-4">

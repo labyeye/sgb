@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Product {
   id: number;
@@ -14,9 +15,13 @@ interface ProductCardProps {
   onClick?: () => void;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  const navigate = useNavigate();
   return (
-    <div className="group relative" onClick={onClick}>
+    <div 
+      className="group relative cursor-pointer" 
+      onClick={() => navigate(`/products/${product.id}`)}
+    >
       <div className="bg-white/80 backdrop-blur-sm rounded-3xl mb-20 p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 relative overflow-visible border border-white/20">
         <div className="absolute -top-10 -right-10 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
           <svg viewBox="0 0 100 100" className="w-full h-full">
@@ -105,8 +110,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
             </div>
           </div>
 
-          <button className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-medium py-3 px-6 rounded-2xl hover:from-yellow-500 hover:to-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm">
-            Buy Now
+          <button className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-medium py-3 px-6 rounded-2xl hover:from-yellow-500 hover:to-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm" onClick={() => navigate(`/products/${product.id}`)}>
+            View Details
           </button>
         </div>
       </div>

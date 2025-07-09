@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
   const heroSlides = [
     {
       title: "Exquisite Beads",
-      subtitle: "For Traditional Sarees & Lehengas",
+      subtitle: "For Traditional Suits & Lehengas",
       background:
         "https://www.shutterstock.com/image-vector/imitation-flower-embroidery-beads-thread-600nw-326103653.jpg",
     },
@@ -31,29 +31,29 @@ const Home = () => {
       name: "Silver Beads",
       image: "https://ik.imagekit.io/os1mzoooe/1.png?updatedAt=1751811752472",
       category: "Silver Beads",
-           color: "SGB21",
+      color: "SGB21",
     },
     {
       id: 2,
       name: "Rose Gold Light Beads",
       image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1751577008492",
       category: "Rose Gold Beads",
-           color: "SGB39 Light",
+      color: "SGB39 Light",
     },
     {
       id: 3,
       name: "Rose Gold Dark Beads",
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751577008317",
       category: "Rose Gold Beads",
-           color: "SGB39 Dark",
+      color: "SGB39 Dark",
     },
-     {
+    {
       id: 11,
       name: "Rabdi Beads",
       image:
         "https://ik.imagekit.io/os1mzoooe/Beads%202.5/1.png?updatedAt=1751973196277",
       category: "2.5mm",
-      
+
       color: "SGBDO16",
     },
   ];
@@ -62,19 +62,18 @@ const Home = () => {
     {
       id: 11,
       name: "Blue Beads",
-      image:
-        "https://ik.imagekit.io/os1mzoooe/6.png?updatedAt=1751973121730",
+      image: "https://ik.imagekit.io/os1mzoooe/6.png?updatedAt=1751973121730",
       category: "2.0mm",
-      
+
       color: "SGB5",
     },
-   {
+    {
       id: 12,
       name: "Red Beads",
       image:
         "https://ik.imagekit.io/os1mzoooe/Beads%202.5/7.png?updatedAt=1751973196189",
       category: "2.5mm",
-      
+
       color: "SGB5",
     },
     {
@@ -82,7 +81,7 @@ const Home = () => {
       name: "Black Beads",
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751811751969",
       category: "Black Beads",
-      
+
       color: "SGB49",
     },
     {
@@ -91,10 +90,9 @@ const Home = () => {
       image:
         "https://ik.imagekit.io/os1mzoooe/Beads%202.5/2.png?updatedAt=1751973195888",
       category: "2.5mm",
-      
+
       color: "SGB121",
     },
-    
   ];
 
   useEffect(() => {
@@ -212,7 +210,7 @@ const Home = () => {
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Discover our handpicked selection of premium beads perfect for
-              sarees, lehengas, and traditional wear
+              Suits, lehengas, and traditional wear
             </p>
           </div>
 
@@ -320,9 +318,7 @@ const Home = () => {
                         transform: " rotateX(20deg)",
                         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
                       }}
-                    >
-                     
-                    </div>
+                    ></div>
                     <span className="absolute text-xs font-bold text-yellow-800">
                       2mm
                     </span>
@@ -344,10 +340,7 @@ const Home = () => {
                         transform: " rotateX(20deg)",
                         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
                       }}
-                    >
-                     
-                    
-                    </div>
+                    ></div>
                     <span className="absolute text-xs font-bold text-yellow-800">
                       2.5mm
                     </span>
@@ -369,9 +362,7 @@ const Home = () => {
                         transform: " rotateX(20deg)",
                         boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
                       }}
-                    >
-                     
-                    </div>
+                    ></div>
                     <span className="absolute text-xs font-bold text-amber-800">
                       3.8mm
                     </span>

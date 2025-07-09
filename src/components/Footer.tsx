@@ -48,9 +48,8 @@ const Footer = () => {
             </div>
             <p className="text-gray-300 leading-relaxed">
               Premium beads for Suits, lehengas, and traditional clothing.
-              Crafting elegance with every bead since 2025.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {[Facebook, Twitter, Instagram].map((Icon, index) => (
                 <a
                   key={index}
@@ -60,7 +59,7 @@ const Footer = () => {
                   <Icon className="w-5 h-5" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}

@@ -76,7 +76,7 @@ const Contact = () => {
               Get In <span className="text-yellow-600">Touch</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Have questions about our beads? Need custom orders for your saree designs? We're here to help!
+              Have questions about our beads? Need custom orders for your suits and lehengas designs? We're here to help!
             </p>
           </div>
         </div>

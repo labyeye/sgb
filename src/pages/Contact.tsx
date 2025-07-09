@@ -213,7 +213,7 @@ const Contact = () => {
         </div>
 
         {/* Map Section */}
-        <div className="mt-16 animate-fade-in-up">
+        {/* <div className="mt-16 animate-fade-in-up">
           <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20">
             <h3 className="text-2xl font-bold text-black mb-6 text-center">Find Our Store</h3>
             <div className="relative h-96 bg-gradient-to-br from-gray-100/80 to-gray-200/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-200/50">
@@ -232,7 +232,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

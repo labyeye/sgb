@@ -23,7 +23,7 @@ const ProductDetails = () => {
     {
       id: 3,
       name: "Milky White Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751577008304",
+      image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1751973121381",
       category: "2.0mm",
       size: "2.0mm",
       color: "SGB121",
@@ -47,7 +47,7 @@ const ProductDetails = () => {
     {
       id: 6,
       name: "Rabdi Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1751577004245",
+      image: "https://ik.imagekit.io/os1mzoooe/10.png?updatedAt=1751973122251",
       category: "2.0mm",
       size: "2.0mm",
       color: "SGB16",
@@ -63,7 +63,7 @@ const ProductDetails = () => {
 
     {
       id: 9,
-      name: "Golden Beads",
+      name: "Golden Metal Beads",
       image: "https://ik.imagekit.io/os1mzoooe/9.png?updatedAt=1751811752189",
       category: "2.0mm",
       size: "2.0mm",

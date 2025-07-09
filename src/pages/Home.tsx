@@ -29,7 +29,7 @@ const Home = () => {
       background:
         "https://ik.imagekit.io/os1mzoooe/3.8/White%20Black%20Modern%20Natural%20Skincare%20Products%20Banner%20(2).png?updatedAt=1752088861467",
       backgroundMobile:
-        "https://ik.imagekit.io/os1mzoooe/3.8/Copy%20of%20White%20Black%20Modern%20Natural%20Skincare%20Products%20Banner.png?updatedAt=1752090034655",
+        "https://ik.imagekit.io/os1mzoooe/Copy%20of%20White%20Black%20Modern%20Natural%20Skincare%20Products%20Banner%20(1).png?updatedAt=1752090385645",
     },
   ];
 

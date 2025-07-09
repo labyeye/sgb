@@ -239,7 +239,7 @@ const Home = () => {
       <section className=" bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-5">
           <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-yellow-100/30 filter blur-3xl"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-100/20 filter blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-64 h-64 rounded-full bg-yellow-100/20 filter blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -343,7 +343,7 @@ const Home = () => {
               <h3 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 mr-2 text-blue-500"
+                  className="h-8 w-8 mr-2 text-yellow-500"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -368,9 +368,9 @@ const Home = () => {
                 ].map((shape, index) => (
                   <div
                     key={index}
-                    className="bg-white p-4 rounded-xl border border-gray-200 hover:border-blue-300 transition-colors duration-200 text-center group"
+                    className="bg-white p-4 rounded-xl border border-gray-200 hover:border-yellow-300 transition-colors duration-200 text-center group"
                   >
-                    <div className="text-3xl mb-2 text-gray-700 group-hover:text-blue-600 transition-colors duration-200">
+                    <div className="text-3xl mb-2 text-gray-700 group-hover:text-yellow-600 transition-colors duration-200">
                       {shape.icon}
                     </div>
                     <h4 className="font-medium text-gray-800">{shape.name}</h4>

@@ -36,22 +36,6 @@ const Home = () => {
     },
     {
       id: 2,
-      name: "Golden Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751811751230",
-      category: "Golden Beads",
-      size: "2mm",
-      color: "SGB22",
-    },
-    {
-      id: 3,
-      name: "Milky White Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/2.png?updatedAt=1751577008304",
-      category: "Milky White Beads",
-      size: "2mm",
-      color: "SGB121",
-    },
-    {
-      id: 4,
       name: "Rose Gold Light Beads",
       image: "https://ik.imagekit.io/os1mzoooe/4.png?updatedAt=1751577008492",
       category: "Rose Gold Beads",
@@ -59,12 +43,21 @@ const Home = () => {
       color: "SGB39 Light",
     },
     {
-      id: 5,
+      id: 3,
       name: "Rose Gold Dark Beads",
       image: "https://ik.imagekit.io/os1mzoooe/3.png?updatedAt=1751577008317",
       category: "Rose Gold Beads",
       size: "2mm",
       color: "SGB39 Dark",
+    },
+     {
+      id: 11,
+      name: "Rabdi Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/1.png?updatedAt=1751973196277",
+      category: "2.5mm",
+      size: "2.5mm",
+      color: "SGBDO16",
     },
   ];
 

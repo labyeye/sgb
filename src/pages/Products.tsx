@@ -46,7 +46,7 @@ const Products = () => {
     },
     {
       id: 6,
-      name: "Light Rabdi Beads",
+      name: "Rabdi Beads",
       image: "https://ik.imagekit.io/os1mzoooe/5.png?updatedAt=1751577004245",
       category: "2.0mm",
       size: "2.0mm",

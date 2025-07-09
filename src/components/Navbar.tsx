@@ -43,7 +43,7 @@ const Navbar = () => {
       } ${
         lastScrollY > 50 
           ? 'bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20' 
-          : 'bg-transparent'
+          : 'bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

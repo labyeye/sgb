@@ -3,25 +3,24 @@ import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [prevSlide, setPrevSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPrevSlide(currentSlide);
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentSlide]);
 
   const heroSlides = [
     {
-      title: "Exquisite Beads",
-      subtitle: "For Traditional Suits & Lehengas",
       background:
-        "https://www.shutterstock.com/image-vector/imitation-flower-embroidery-beads-thread-600nw-326103653.jpg",
+        "https://ik.imagekit.io/os1mzoooe/White%20Black%20Modern%20Natural%20Skincare%20Products%20Banner.png?updatedAt=1752088324978",
     },
     {
-      title: "Premium Quality",
-      subtitle: "Handcrafted Embellishments",
       background:
-        "https://rizwanfashion.com/cdn/shop/products/CrownJalabiya-1200x1500_0002_Layer2.jpg?v=1634368016",
-    },
-    {
-      title: "Traditional Elegance",
-      subtitle: "Modern Craftsmanship",
-      background:
-        "https://rizwanfashion.com/cdn/shop/products/CrownJalabiya-1200x1500_0000_Layer4.jpg?v=1634368016",
+        "https://ik.imagekit.io/os1mzoooe/3.8/White%20Black%20Modern%20Natural%20Skincare%20Products%20Banner%20(2).png?updatedAt=1752088861467",
     },
   ];
 
@@ -98,90 +97,51 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center">
-        <div className="absolute inset-0 transition-all duration-1000">
-          <img
-            src={heroSlides[currentSlide].background}
-            alt="Hero Background"
-            className="w-full h-full object-cover"
-          />
+      {/* Hero Section */}
+<section className="mt-20 relative h-screen overflow-hidden">
+  {/* Slide Images */}
+  <div className="absolute inset-0">
+    {heroSlides.map((slide, index) => (
+      <img
+        key={index}
+        src={slide.background}
+        alt={`Slide ${index}`}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+          index === currentSlide ? "opacity-100 z-20" : "opacity-0 z-10"
+        }`}
+      />
+    ))}
+  </div>
 
-          {/* Floating Decorative Elements */}
-          <div className="absolute top-20 left-20 w-32 h-32 opacity-20">
-            <svg viewBox="0 0 100 100" className="w-full h-full animate-float">
-              <defs>
-                <radialGradient id="heroGradient1" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#D4AF37" stopOpacity="0.6" />
-                  <stop offset="100%" stopColor="#D4AF37" stopOpacity="0" />
-                </radialGradient>
-              </defs>
-              <circle
-                cx="50"
-                cy="50"
-                r="30"
-                fill="url(#heroGradient1)"
-                filter="blur(10px)"
-              />
-            </svg>
-          </div>
+  {/* Floating Decorative Elements */}
+  <div className="absolute top-20 left-20 w-32 h-32 opacity-20 z-30">
+    {/* SVG Gradient */}
+  </div>
+  <div className="absolute bottom-32 right-32 w-24 h-24 opacity-15 z-30">
+    {/* SVG Gradient */}
+  </div>
 
-          <div className="absolute bottom-32 right-32 w-24 h-24 opacity-15">
-            <svg
-              viewBox="0 0 100 100"
-              className="w-full h-full animate-float"
-              style={{ animationDelay: "1s" }}
-            >
-              <defs>
-                <radialGradient id="heroGradient2" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#D4AF37" stopOpacity="0.4" />
-                  <stop offset="100%" stopColor="#D4AF37" stopOpacity="0" />
-                </radialGradient>
-              </defs>
-              <circle
-                cx="50"
-                cy="50"
-                r="25"
-                fill="url(#heroGradient2)"
-                filter="blur(8px)"
-              />
-            </svg>
-          </div>
-        </div>
+  {/* Slide Indicators */}
+  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-30">
+    {heroSlides.map((_, index) => (
+      <button
+        key={index}
+        onClick={() => setCurrentSlide(index)}
+        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+          index === currentSlide ? "bg-yellow-400 scale-125" : "bg-white/50"
+        }`}
+      />
+    ))}
+  </div>
+</section>
 
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
-            {heroSlides[currentSlide].title}
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            {heroSlides[currentSlide].subtitle}
-          </p>
-          <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-bold py-4 px-8 rounded-2xl hover:from-yellow-500 hover:to-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-2xl backdrop-blur-sm">
-            Explore Collection
-          </button>
-        </div>
-
-        {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
-          {heroSlides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide
-                  ? "bg-yellow-400 scale-125"
-                  : "bg-white/50"
-              }`}
-            />
-          ))}
-        </div>
-      </section>
       {/* Featured Products Slider */}
       <section className="py-20 bg-gradient-to-br from-gray-50/80 to-white/90 backdrop-blur-sm relative">
         {/* Background Decorative Elements */}

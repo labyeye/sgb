@@ -192,7 +192,7 @@ const Products = () => {
       image:
         "https://ik.imagekit.io/os1mzoooe/3.8/3.png?updatedAt=1752081872007",
       category: "Gold Beads",
-      size: "2.5mm",
+      size: "3.8mm",
       color: "SGB39",
     },
     {

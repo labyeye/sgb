@@ -6,7 +6,7 @@ const About = () => {
   const values = [
     {
       icon: Globe,
-      title: "Premium Imports",
+      title: "Premium Quality",
       description: "Carefully sourced glass beads from trusted global suppliers, ensuring consistent quality for your manufacturing needs."
     },
     {

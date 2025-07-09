@@ -88,7 +88,8 @@ const Products = () => {
     {
       id: 11,
       name: "Rabdi Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/Beads%202.5/1.png?updatedAt=1751973196277",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/1.png?updatedAt=1751973196277",
       category: "Rabdi Beads",
       size: "2.5mm",
       color: "SGBDO16",
@@ -96,7 +97,8 @@ const Products = () => {
     {
       id: 12,
       name: "Red Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/Beads%202.5/7.png?updatedAt=1751973196189",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/7.png?updatedAt=1751973196189",
       category: "Red Beads",
       size: "2mm",
       color: "SGB5",
@@ -104,7 +106,8 @@ const Products = () => {
     {
       id: 13,
       name: "Milky White Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/Beads%202.5/2.png?updatedAt=1751973195888",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/2.png?updatedAt=1751973195888",
       category: "Milky White Beads",
       size: "2.5mm",
       color: "SGB121",
@@ -112,7 +115,8 @@ const Products = () => {
     {
       id: 14,
       name: "Transparent Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/Beads%202.5/3.png?updatedAt=1751973195216",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/3.png?updatedAt=1751973195216",
       category: "Transparent Beads",
       size: "2.5mm",
       color: "SGB161",
@@ -120,7 +124,8 @@ const Products = () => {
     {
       id: 15,
       name: "Gold Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/Beads%202.5/6.png?updatedAt=1751973196161",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/6.png?updatedAt=1751973196161",
       category: "Gold Beads",
       size: "2.5mm",
       color: "SGB39",
@@ -128,7 +133,8 @@ const Products = () => {
     {
       id: 16,
       name: "Black Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/Beads%202.5/4.png?updatedAt=1751973195652",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/4.png?updatedAt=1751973195652",
       category: "Black Beads",
       size: "2.5mm",
       color: "SGB49",
@@ -136,7 +142,8 @@ const Products = () => {
     {
       id: 17,
       name: "Transparent Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/Beads%202.5/5.png?updatedAt=1751973195679",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/5.png?updatedAt=1751973195679",
       category: "Transparent Beads",
       size: "2.5mm",
       color: "SGB101",
@@ -144,7 +151,8 @@ const Products = () => {
     {
       id: 18,
       name: "Rose Gold Light Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/Beads%202.5/9.png?updatedAt=1751973196032",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/9.png?updatedAt=1751973196032",
       category: "Rose Gold Beads",
       size: "2.5mm",
       color: "SGB576",
@@ -153,9 +161,75 @@ const Products = () => {
     {
       id: 19,
       name: "Silver Beads",
-      image: "https://ik.imagekit.io/os1mzoooe/Beads%202.5/8.png?updatedAt=1751973196059",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/Beads%202.5/8.png?updatedAt=1751973196059",
       category: "Silver Beads",
       size: "2.5mm",
+      color: "SGB21",
+    },
+    
+    {
+      id: 20,
+      name: "Rose Gold Dark Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/3.8/1.png?updatedAt=1752081871961",
+      category: "Rose Gold Beads",
+      size: "3.8mm",
+      color: "SGB39",
+    },
+    {
+      id: 21,
+      name: "Rose Gold Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/3.8/2.png?updatedAt=1752081871832",
+      category: "Rose Gold Beads",
+      size: "3.8mm",
+      color: "SGB39",
+    },
+    {
+      id: 22,
+      name: "Gold Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/3.8/3.png?updatedAt=1752081872007",
+      category: "Gold Beads",
+      size: "2.5mm",
+      color: "SGB39",
+    },
+    {
+      id: 23,
+      name: "Silver Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/3.8/4.png?updatedAt=1752081872016",
+      category: "Silver Beads",
+      size: "3.8mm",
+      color: "SGB21",
+    },
+    {
+      id: 24,
+      name: "Milky White Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/3.8/5.png?updatedAt=1752081871889",
+      category: "Milky White Beads",
+      size: "3.8mm",
+      color: "SGB101",
+    },
+    {
+      id: 25,
+      name: "Transparent Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/3.8/6.png?updatedAt=1752081871838",
+      category: "Transparent Beads",
+      size: "3.8mm",
+      color: "SGB101",
+    },
+
+    {
+      id: 26,
+      name: "Black Beads",
+      image:
+        "https://ik.imagekit.io/os1mzoooe/3.8/7.png?updatedAt=1752081871900",
+      category: "Black Beads",
+      size: "3.8mm",
       color: "SGB21",
     },
   ];

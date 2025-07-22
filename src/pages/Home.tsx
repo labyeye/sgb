@@ -15,7 +15,7 @@ const Home = () => {
     const interval = setInterval(() => {
       setPrevSlide(currentSlide);
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 2000);
+    }, 1500);
     return () => clearInterval(interval);
   }, [currentSlide]);
   const heroSlides = [
